@@ -6,11 +6,11 @@ pipeline {
                 echo 'Hi , You are inside the pipeline'
             }
         }
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/AnandLoganathan/jenkinspipeline.git'
-            } 
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git 'https://github.com/AnandLoganathan/jenkinspipeline.git'
+        //     } 
+        // }
         stage('build') {
             steps {
                 echo 'skipping build'
